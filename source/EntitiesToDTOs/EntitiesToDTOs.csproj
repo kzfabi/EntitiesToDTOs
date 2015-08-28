@@ -243,6 +243,7 @@
   <ItemGroup>
     <Content Include="bolt.ico" />
     <Content Include="EntitiesToDTOs.AddIn" />
+    <Content Include="Resources\License.txt" />
     <None Include="Diagrams\DTOs.cd" />
     <None Include="Resources\Advert_1.png" />
     <None Include="Resources\AdLoading.png" />
@@ -250,7 +251,6 @@
     <None Include="Resources\img_warning.png" />
     <None Include="Resources\23.png" />
     <None Include="Resources\Assembler_cs_template.txt" />
-    <None Include="Resources\License.txt" />
     <None Include="Resources\img_help_hover.png" />
     <None Include="Resources\img_help.png" />
   </ItemGroup>
