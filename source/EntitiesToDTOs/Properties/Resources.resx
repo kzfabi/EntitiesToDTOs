@@ -1,0 +1,1104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssemblySystemRuntimeSerialization" xml:space="preserve">
+    <value>System.Runtime.Serialization</value>
+  </data>
+  <data name="CSharpCodeAssignmentThis" xml:space="preserve">
+    <value>this.{0} = {1};</value>
+  </data>
+  <data name="AttributeDataContract" xml:space="preserve">
+    <value>DataContract</value>
+  </data>
+  <data name="AttributeDataMember" xml:space="preserve">
+    <value>DataMember</value>
+  </data>
+  <data name="AttributeKnownType" xml:space="preserve">
+    <value>KnownType</value>
+  </data>
+  <data name="CSharpCodeGet" xml:space="preserve">
+    <value>get;</value>
+  </data>
+  <data name="CSharpTypeListT" xml:space="preserve">
+    <value>List&lt;{0}&gt;</value>
+  </data>
+  <data name="CSharpCodeSet" xml:space="preserve">
+    <value>set;</value>
+  </data>
+  <data name="CSharpCodeTypeOf" xml:space="preserve">
+    <value>typeof({0})</value>
+  </data>
+  <data name="CSharpCommentMultiline" xml:space="preserve">
+    <value>/*{0}*/</value>
+  </data>
+  <data name="CSharpCommentSingleLine" xml:space="preserve">
+    <value>// </value>
+  </data>
+  <data name="CSharpFileExtension" xml:space="preserve">
+    <value>.cs</value>
+  </data>
+  <data name="Dot" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="XmlBoolTrue" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="EdmxFileExtension" xml:space="preserve">
+    <value>.edmx</value>
+  </data>
+  <data name="EntitiesToDTOsSignature" xml:space="preserve">
+    <value>//-------------------------------------------------------------------------------------------------------
+// &lt;auto-generated&gt;
+//     This code was generated by EntitiesToDTOs.v{0} (entitiestodtos.codeplex.com).
+//     Timestamp: {1}
+//
+//     Changes to this file may cause incorrect behavior and will be lost if the code is regenerated.
+// &lt;/auto-generated&gt;
+//-------------------------------------------------------------------------------------------------------</value>
+  </data>
+  <data name="Error_Caption" xml:space="preserve">
+    <value>Error - EntitiesToDTOs</value>
+  </data>
+  <data name="Error_InvalidNamespaceDTOs" xml:space="preserve">
+    <value>Please, provide a Namespace for the DTOs.</value>
+  </data>
+  <data name="Error_InvalidSourceFileNameDTOs" xml:space="preserve">
+    <value>Invalid Source File name for DTOs. It cannot be empty or have spaces.</value>
+  </data>
+  <data name="Error_NoSolution" xml:space="preserve">
+    <value>Open a Solution first.</value>
+  </data>
+  <data name="Error_NotRecognizedMultiplicity" xml:space="preserve">
+    <value>Not recognized Multiplicity "{0}" in Association End, Type: "{1}", Role: "{2}".</value>
+  </data>
+  <data name="NameSeparator" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="NamespaceSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="NamespaceSystemCollectionsGeneric" xml:space="preserve">
+    <value>System.Collections.Generic</value>
+  </data>
+  <data name="NamespaceSystemRuntimeSerialization" xml:space="preserve">
+    <value>System.Runtime.Serialization</value>
+  </data>
+  <data name="NamespaceSystemText" xml:space="preserve">
+    <value>System.Text</value>
+  </data>
+  <data name="NameTailDTO" xml:space="preserve">
+    <value>DTO</value>
+  </data>
+  <data name="NameEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="NameEntitySet" xml:space="preserve">
+    <value>EntitySet</value>
+  </data>
+  <data name="NameTailPlural" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="ProjectItem_FileName" xml:space="preserve">
+    <value>FileName</value>
+  </data>
+  <data name="ProjectItem_FullPath" xml:space="preserve">
+    <value>FullPath</value>
+  </data>
+  <data name="ProjectItem_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Properties_DefaultNamespace" xml:space="preserve">
+    <value>DefaultNamespace</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="TemplateClassFileName" xml:space="preserve">
+    <value>EntitiesToDTOs.temp.cs</value>
+  </data>
+  <data name="Text_DefaultSourceFileName" xml:space="preserve">
+    <value>Will take the name of the class.</value>
+  </data>
+  <data name="Text_DTOsGenerated" xml:space="preserve">
+    <value>DTOs generated: {0} / {1}</value>
+  </data>
+  <data name="GenerationProgressWindow_Caption" xml:space="preserve">
+    <value>{0} - EntitiesToDTOs - v{1}</value>
+  </data>
+  <data name="Warning_CannotCreateNavPropManyKeyProp" xml:space="preserve">
+    <value>[EntitiesToDTOs:001] Cannot create navigation property from {0} to {1}. Multiplicity is "Many" and desired association is KeyProperty, but the Entity Key of "{1}" is more than one property. Changing desired association to ClassType only for Entity "{0}".</value>
+  </data>
+  <data name="Warning_ManuallyAddReference" xml:space="preserve">
+    <value>[EntitiesToDTOs:004] Reference to {0} in project {1} could not be created, add it manually.</value>
+  </data>
+  <data name="CSharpTypeBoolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="CSharpTypeInt32" xml:space="preserve">
+    <value>Int32</value>
+  </data>
+  <data name="CSharpTypeInt64" xml:space="preserve">
+    <value>Int64</value>
+  </data>
+  <data name="CSharpTypeObject" xml:space="preserve">
+    <value>object</value>
+  </data>
+  <data name="CSharpTypeString" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="EdmxTypeBoolean" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="EdmxTypeInt32" xml:space="preserve">
+    <value>Int32</value>
+  </data>
+  <data name="EdmxTypeInt64" xml:space="preserve">
+    <value>Int64</value>
+  </data>
+  <data name="EdmxTypeString" xml:space="preserve">
+    <value>String</value>
+  </data>
+  <data name="Error_ExceptionMessage" xml:space="preserve">
+    <value>An error ocurred: {0}</value>
+  </data>
+  <data name="Text_WarningMessageShortenedTail" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="CSharpTypeBinary" xml:space="preserve">
+    <value>Byte[]</value>
+  </data>
+  <data name="CSharpTypeByte" xml:space="preserve">
+    <value>Byte</value>
+  </data>
+  <data name="CSharpTypeDateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="CSharpTypeDateTimeOffset" xml:space="preserve">
+    <value>DateTimeOffset</value>
+  </data>
+  <data name="CSharpTypeDecimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="CSharpTypeDouble" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="CSharpTypeGuid" xml:space="preserve">
+    <value>Guid</value>
+  </data>
+  <data name="CSharpTypeInt16" xml:space="preserve">
+    <value>Int16</value>
+  </data>
+  <data name="CSharpTypeSByte" xml:space="preserve">
+    <value>SByte</value>
+  </data>
+  <data name="CSharpTypeSingle" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="CSharpTypeTime" xml:space="preserve">
+    <value>TimeSpan</value>
+  </data>
+  <data name="EdmxTypeBinary" xml:space="preserve">
+    <value>Binary</value>
+  </data>
+  <data name="EdmxTypeByte" xml:space="preserve">
+    <value>Byte</value>
+  </data>
+  <data name="EdmxTypeDateTime" xml:space="preserve">
+    <value>DateTime</value>
+  </data>
+  <data name="EdmxTypeDateTimeOffset" xml:space="preserve">
+    <value>DateTimeOffset</value>
+  </data>
+  <data name="EdmxTypeDecimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="EdmxTypeDouble" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="EdmxTypeGuid" xml:space="preserve">
+    <value>Guid</value>
+  </data>
+  <data name="EdmxTypeInt16" xml:space="preserve">
+    <value>Int16</value>
+  </data>
+  <data name="EdmxTypeSByte" xml:space="preserve">
+    <value>SByte</value>
+  </data>
+  <data name="EdmxTypeSingle" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="EdmxTypeTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="VSGuidProjectWindowsCPlusPlus" xml:space="preserve">
+    <value>{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}</value>
+  </data>
+  <data name="VSGuidProjectWindowsCSharp" xml:space="preserve">
+    <value>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</value>
+  </data>
+  <data name="VSGuidProjectJSharp" xml:space="preserve">
+    <value>{E6FDF86B-F3D1-11D4-8576-0002A516ECE8}</value>
+  </data>
+  <data name="VSGuidSolutionFolder" xml:space="preserve">
+    <value>{66A26720-8FB5-11D2-AA7E-00C04F688DDE}</value>
+  </data>
+  <data name="VSGuidProjectWindowsVB" xml:space="preserve">
+    <value>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</value>
+  </data>
+  <data name="VSGuidProjectWebSite" xml:space="preserve">
+    <value>{E24C65DC-7377-472b-9ABA-BC803B73C61A}</value>
+  </data>
+  <data name="LogFileName" xml:space="preserve">
+    <value>EntitiesToDTOs.log</value>
+  </data>
+  <data name="LogError" xml:space="preserve">
+    <value>[ERROR]</value>
+  </data>
+  <data name="LogInfo" xml:space="preserve">
+    <value>[INFO]</value>
+  </data>
+  <data name="LogSeparator" xml:space="preserve">
+    <value>---------------------------------------------------------------------------------------------------</value>
+  </data>
+  <data name="ReservedName01" xml:space="preserve">
+    <value>abstract</value>
+  </data>
+  <data name="ReservedName10" xml:space="preserve">
+    <value>checked</value>
+  </data>
+  <data name="ReservedName11" xml:space="preserve">
+    <value>class</value>
+  </data>
+  <data name="ReservedName12" xml:space="preserve">
+    <value>const</value>
+  </data>
+  <data name="ReservedName13" xml:space="preserve">
+    <value>continue</value>
+  </data>
+  <data name="ReservedName14" xml:space="preserve">
+    <value>decimal</value>
+  </data>
+  <data name="ReservedName15" xml:space="preserve">
+    <value>default</value>
+  </data>
+  <data name="ReservedName16" xml:space="preserve">
+    <value>delegate</value>
+  </data>
+  <data name="ReservedName17" xml:space="preserve">
+    <value>do</value>
+  </data>
+  <data name="ReservedName18" xml:space="preserve">
+    <value>double</value>
+  </data>
+  <data name="ReservedName19" xml:space="preserve">
+    <value>else</value>
+  </data>
+  <data name="ReservedName02" xml:space="preserve">
+    <value>as</value>
+  </data>
+  <data name="ReservedName20" xml:space="preserve">
+    <value>enum</value>
+  </data>
+  <data name="ReservedName21" xml:space="preserve">
+    <value>event</value>
+  </data>
+  <data name="ReservedName22" xml:space="preserve">
+    <value>explicit</value>
+  </data>
+  <data name="ReservedName23" xml:space="preserve">
+    <value>extern</value>
+  </data>
+  <data name="ReservedName24" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="ReservedName25" xml:space="preserve">
+    <value>finally</value>
+  </data>
+  <data name="ReservedName26" xml:space="preserve">
+    <value>fixed</value>
+  </data>
+  <data name="ReservedName27" xml:space="preserve">
+    <value>float</value>
+  </data>
+  <data name="ReservedName28" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="ReservedName29" xml:space="preserve">
+    <value>foreach</value>
+  </data>
+  <data name="ReservedName03" xml:space="preserve">
+    <value>base</value>
+  </data>
+  <data name="ReservedName30" xml:space="preserve">
+    <value>goto</value>
+  </data>
+  <data name="ReservedName31" xml:space="preserve">
+    <value>if</value>
+  </data>
+  <data name="ReservedName32" xml:space="preserve">
+    <value>implicit</value>
+  </data>
+  <data name="ReservedName33" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="ReservedName34" xml:space="preserve">
+    <value>int</value>
+  </data>
+  <data name="ReservedName35" xml:space="preserve">
+    <value>interface</value>
+  </data>
+  <data name="ReservedName36" xml:space="preserve">
+    <value>internal</value>
+  </data>
+  <data name="ReservedName37" xml:space="preserve">
+    <value>is</value>
+  </data>
+  <data name="ReservedName38" xml:space="preserve">
+    <value>lock</value>
+  </data>
+  <data name="ReservedName39" xml:space="preserve">
+    <value>long</value>
+  </data>
+  <data name="ReservedName04" xml:space="preserve">
+    <value>bool</value>
+  </data>
+  <data name="ReservedName40" xml:space="preserve">
+    <value>namespace</value>
+  </data>
+  <data name="ReservedName41" xml:space="preserve">
+    <value>new</value>
+  </data>
+  <data name="ReservedName42" xml:space="preserve">
+    <value>null</value>
+  </data>
+  <data name="ReservedName43" xml:space="preserve">
+    <value>object</value>
+  </data>
+  <data name="ReservedName44" xml:space="preserve">
+    <value>operator</value>
+  </data>
+  <data name="ReservedName45" xml:space="preserve">
+    <value>out</value>
+  </data>
+  <data name="ReservedName46" xml:space="preserve">
+    <value>override</value>
+  </data>
+  <data name="ReservedName47" xml:space="preserve">
+    <value>params</value>
+  </data>
+  <data name="ReservedName48" xml:space="preserve">
+    <value>private</value>
+  </data>
+  <data name="ReservedName49" xml:space="preserve">
+    <value>protected</value>
+  </data>
+  <data name="ReservedName05" xml:space="preserve">
+    <value>break</value>
+  </data>
+  <data name="ReservedName50" xml:space="preserve">
+    <value>public</value>
+  </data>
+  <data name="ReservedName51" xml:space="preserve">
+    <value>readonly</value>
+  </data>
+  <data name="ReservedName52" xml:space="preserve">
+    <value>ref</value>
+  </data>
+  <data name="ReservedName53" xml:space="preserve">
+    <value>return</value>
+  </data>
+  <data name="ReservedName54" xml:space="preserve">
+    <value>sbyte</value>
+  </data>
+  <data name="ReservedName55" xml:space="preserve">
+    <value>sealed</value>
+  </data>
+  <data name="ReservedName56" xml:space="preserve">
+    <value>short</value>
+  </data>
+  <data name="ReservedName57" xml:space="preserve">
+    <value>sizeof</value>
+  </data>
+  <data name="ReservedName58" xml:space="preserve">
+    <value>stackalloc</value>
+  </data>
+  <data name="ReservedName59" xml:space="preserve">
+    <value>static</value>
+  </data>
+  <data name="ReservedName06" xml:space="preserve">
+    <value>byte</value>
+  </data>
+  <data name="ReservedName60" xml:space="preserve">
+    <value>string</value>
+  </data>
+  <data name="ReservedName61" xml:space="preserve">
+    <value>struct</value>
+  </data>
+  <data name="ReservedName62" xml:space="preserve">
+    <value>switch</value>
+  </data>
+  <data name="ReservedName63" xml:space="preserve">
+    <value>this</value>
+  </data>
+  <data name="ReservedName64" xml:space="preserve">
+    <value>throw</value>
+  </data>
+  <data name="ReservedName65" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="ReservedName66" xml:space="preserve">
+    <value>try</value>
+  </data>
+  <data name="ReservedName67" xml:space="preserve">
+    <value>typeof</value>
+  </data>
+  <data name="ReservedName68" xml:space="preserve">
+    <value>uint</value>
+  </data>
+  <data name="ReservedName69" xml:space="preserve">
+    <value>ulong</value>
+  </data>
+  <data name="ReservedName07" xml:space="preserve">
+    <value>case</value>
+  </data>
+  <data name="ReservedName70" xml:space="preserve">
+    <value>unchecked</value>
+  </data>
+  <data name="ReservedName71" xml:space="preserve">
+    <value>unsafe</value>
+  </data>
+  <data name="ReservedName72" xml:space="preserve">
+    <value>ushort</value>
+  </data>
+  <data name="ReservedName73" xml:space="preserve">
+    <value>using</value>
+  </data>
+  <data name="ReservedName74" xml:space="preserve">
+    <value>virtual</value>
+  </data>
+  <data name="ReservedName75" xml:space="preserve">
+    <value>void</value>
+  </data>
+  <data name="ReservedName76" xml:space="preserve">
+    <value>volatile</value>
+  </data>
+  <data name="ReservedName77" xml:space="preserve">
+    <value>while</value>
+  </data>
+  <data name="ReservedName08" xml:space="preserve">
+    <value>catch</value>
+  </data>
+  <data name="ReservedName09" xml:space="preserve">
+    <value>char</value>
+  </data>
+  <data name="Warning_InvalidPropertyName" xml:space="preserve">
+    <value>[EntitiesToDTOs:003] Entity "{0}" has an invalid property name which is "{1}". Using "{2}" instead.</value>
+  </data>
+  <data name="Error_PropertyNameCannotBeEmpty" xml:space="preserve">
+    <value>Entity "{0}" has a property with an empty name.</value>
+  </data>
+  <data name="Info_Caption" xml:space="preserve">
+    <value>Info - EntitiesToDTOs</value>
+  </data>
+  <data name="Info_LogFile" xml:space="preserve">
+    <value>The Log will be appended to {0}. If the file does not exists, it will be created.</value>
+  </data>
+  <data name="CSharpTypeNullableT" xml:space="preserve">
+    <value>Nullable&lt;{0}&gt;</value>
+  </data>
+  <data name="Warning_NotSupportedEDMXPropertyType" xml:space="preserve">
+    <value>[EntitiesToDTOs:005] Entity "{0}" has a property named "{1}" of type "{2}" which is not supported. Using type "object" instead.</value>
+  </data>
+  <data name="Error_PropertyKeyMissing" xml:space="preserve">
+    <value>Entity "{0}" does not have property named "{1}", but it is referenced in the Key node.</value>
+  </data>
+  <data name="Error_PropertyTypeAttributeMissing" xml:space="preserve">
+    <value>Entity "{0}" has a property named "{1}" which does not have a Type attribute or the value is empty.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="img_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_help_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_help_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="License" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VSGuidProjectSetup" xml:space="preserve">
+    <value>{54435603-DBB4-11D2-8724-00A0C9A8B90C}</value>
+  </data>
+  <data name="Backslash" xml:space="preserve">
+    <value>\</value>
+  </data>
+  <data name="BackupFileExtension" xml:space="preserve">
+    <value>.bak</value>
+  </data>
+  <data name="Info_GenerationComplete" xml:space="preserve">
+    <value>Generation succesfully completed!</value>
+  </data>
+  <data name="Warning_SourceFileAlreadyExists" xml:space="preserve">
+    <value>[EntitiesToDTOs:006] A Source File named "{0}" already exists in the Target Project folder and it is not present in the Solution Explorer. Renaming it to "{1}" and creating a new Source File.</value>
+  </data>
+  <data name="Error_BaseTypeNotFound" xml:space="preserve">
+    <value>Entity {0} has {1} as the BaseType but Entity {1} was not found in the EDMX file.</value>
+  </data>
+  <data name="CommaSpace" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="CSharpCodeBaseConstructor" xml:space="preserve">
+    <value>: base()</value>
+  </data>
+  <data name="CSharpCodeBaseConstructorWithParams" xml:space="preserve">
+    <value>: base({0})</value>
+  </data>
+  <data name="AssemblerSuffix" xml:space="preserve">
+    <value>Assembler</value>
+  </data>
+  <data name="Error_InvalidEntityName" xml:space="preserve">
+    <value>Entity name cannot be null or whitespace. Please, review your EDMX file.</value>
+  </data>
+  <data name="Error_InvalidEventArgsType" xml:space="preserve">
+    <value>Invalid EventArgs type received.</value>
+  </data>
+  <data name="MainWindow_Caption" xml:space="preserve">
+    <value>EntitiesToDTOs - v{0}</value>
+  </data>
+  <data name="Error_InvalidNamespaceAssemblers" xml:space="preserve">
+    <value>Please, provide a Namespace for the Assemblers.</value>
+  </data>
+  <data name="Error_InvalidSourceFileNameAssemblers" xml:space="preserve">
+    <value>Invalid Source File name for Assemblers. It cannot be empty or have spaces.</value>
+  </data>
+  <data name="Error_NoEDMXSource" xml:space="preserve">
+    <value>Please, select an EDMX Source.</value>
+  </data>
+  <data name="Error_NoTargetAssemblers" xml:space="preserve">
+    <value>Please, select a target for Assemblers. Solution is not allowed.</value>
+  </data>
+  <data name="Error_NoTargetDTOs" xml:space="preserve">
+    <value>Please, select a target for DTOs. Solution is not allowed.</value>
+  </data>
+  <data name="Text_PleaseWait" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="VSGuidProjectDatabase" xml:space="preserve">
+    <value>{A9ACE9BB-CECE-4E62-9AA4-C7E7C5BD2124}</value>
+  </data>
+  <data name="VSGuidProjectDatabaseOther" xml:space="preserve">
+    <value>{4F174C21-8C12-11D0-8340-0000F80270F8}</value>
+  </data>
+  <data name="VSGuidProjectDeploymentCab" xml:space="preserve">
+    <value>{3EA9E505-35AC-4774-B492-AD1749C4943A}</value>
+  </data>
+  <data name="VSGuidProjectDeploymentMergeModule" xml:space="preserve">
+    <value>{06A35CCD-C46D-44D5-987B-CF40FF872267}</value>
+  </data>
+  <data name="VSGuidProjectDeploymentSetup" xml:space="preserve">
+    <value>{978C614F-708E-4E1A-B201-565925725DBA}</value>
+  </data>
+  <data name="VSGuidProjectDeploymentSmartDeviceCab" xml:space="preserve">
+    <value>{AB322303-2255-48EF-A496-5904EB18DA55}</value>
+  </data>
+  <data name="VSGuidProjectDistributedSystem" xml:space="preserve">
+    <value>{F135691A-BF7E-435D-8960-F99683D2D49C}</value>
+  </data>
+  <data name="VSGuidProjectLegacy2003SmartDeviceCSharp" xml:space="preserve">
+    <value>{20D4826A-C6FA-45DB-90F4-C717570B9F32}</value>
+  </data>
+  <data name="VSGuidProjectLegacy2003SmartDeviceVB" xml:space="preserve">
+    <value>{CB4CE8C6-1BDB-4DC7-A4D3-65A1999772F8}</value>
+  </data>
+  <data name="VSGuidProjectSharepointSharp" xml:space="preserve">
+    <value>{593B0543-81F6-4436-BA1E-4747859CAAE2}</value>
+  </data>
+  <data name="VSGuidProjectSharepointVB" xml:space="preserve">
+    <value>{EC05E597-79D4-47f3-ADA0-324C4F7C7484}</value>
+  </data>
+  <data name="VSGuidProjectSharepointWorkflow" xml:space="preserve">
+    <value>{F8810EC1-6754-47FC-A15F-DFABD2E3FA90}</value>
+  </data>
+  <data name="VSGuidProjectSilverlight" xml:space="preserve">
+    <value>{A1591282-1198-4647-A2B1-27E5FF5F6F3B}</value>
+  </data>
+  <data name="VSGuidProjectSmartDeviceCSharp" xml:space="preserve">
+    <value>{4D628B5B-2FBC-4AA6-8C16-197242AEB884}</value>
+  </data>
+  <data name="VSGuidProjectSmartDeviceVB" xml:space="preserve">
+    <value>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F}</value>
+  </data>
+  <data name="VSGuidProjectTest" xml:space="preserve">
+    <value>{3AC096D0-A1C2-E12C-1390-A8335801FDAB}</value>
+  </data>
+  <data name="VSGuidProjectVisualDatabaseTools" xml:space="preserve">
+    <value>{C252FEB5-A946-4202-B1D4-9916A0590387}</value>
+  </data>
+  <data name="VSGuidProjectVSTA" xml:space="preserve">
+    <value>{A860303F-1F3F-4691-B57E-529FC101A107}</value>
+  </data>
+  <data name="VSGuidProjectVSTO" xml:space="preserve">
+    <value>{BAA0C2D2-18E2-41B9-852F-F413020CAA33}</value>
+  </data>
+  <data name="VSGuidProjectWCF" xml:space="preserve">
+    <value>{3D9AD99F-2412-4246-B90B-4EAA41C64699}</value>
+  </data>
+  <data name="VSGuidProjectWebApplication" xml:space="preserve">
+    <value>{349C5851-65DF-11DA-9384-00065B846F21}</value>
+  </data>
+  <data name="VSGuidProjectWorkflowCSharp" xml:space="preserve">
+    <value>{14822709-B5A1-4724-98CA-57A101D1B079}</value>
+  </data>
+  <data name="VSGuidProjectWorkflowVB" xml:space="preserve">
+    <value>{D59BE175-2ED0-4C54-BE3D-CDAA9F3214C8}</value>
+  </data>
+  <data name="VSGuidProjectWPF" xml:space="preserve">
+    <value>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548}</value>
+  </data>
+  <data name="VSGuidProjectXNAWindows" xml:space="preserve">
+    <value>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596}</value>
+  </data>
+  <data name="VSGuidProjectXNAXBox" xml:space="preserve">
+    <value>{2DF5C3F4-5A5F-47a9-8E94-23B4456F55E2}</value>
+  </data>
+  <data name="VSGuidProjectXNAZune" xml:space="preserve">
+    <value>{D399B71A-8929-442a-A9AC-8BEC78BB2433}</value>
+  </data>
+  <data name="AssemblerAccess" xml:space="preserve">
+    <value>public</value>
+  </data>
+  <data name="AssemblerAccess_Wildcard" xml:space="preserve">
+    <value>&lt;%=AssemblerAccess%&gt;</value>
+  </data>
+  <data name="AssemblerBaseName" xml:space="preserve">
+    <value>AssemblerBase</value>
+  </data>
+  <data name="AssemblerBaseName_Wildcard" xml:space="preserve">
+    <value>&lt;%=AssemblerBaseName%&gt;</value>
+  </data>
+  <data name="Text_AssemblersGenerated" xml:space="preserve">
+    <value>Assemblers generated: {0} / {1}</value>
+  </data>
+  <data name="AssemblerDTO_Wildcard" xml:space="preserve">
+    <value>&lt;%=DTOName%&gt;</value>
+  </data>
+  <data name="AssemblerEntityName_Wildcard" xml:space="preserve">
+    <value>&lt;%=EntityName%&gt;</value>
+  </data>
+  <data name="AssemblerToDTOAssignments_Wildcard" xml:space="preserve">
+    <value>&lt;%=ToDTOAssignments%&gt;</value>
+  </data>
+  <data name="AssemblerToEntityAssignments_Wildcard" xml:space="preserve">
+    <value>&lt;%=ToEntityAssignments%&gt;</value>
+  </data>
+  <data name="Assembler_cs_template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Assembler_cs_template.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CSharpCodeAssignment" xml:space="preserve">
+    <value>{0} = {1};</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>EntitiesToDTOs</value>
+  </data>
+  <data name="GenConfigFileFilter" xml:space="preserve">
+    <value>EntitiesToDTOs configuration file (*.etdtosconfig.xml)|*.etdtosconfig.xml</value>
+  </data>
+  <data name="GenConfigFileExtension" xml:space="preserve">
+    <value>.etdtosconfig.xml</value>
+  </data>
+  <data name="GenConfigTempFileName" xml:space="preserve">
+    <value>EntitiesToDTOs</value>
+  </data>
+  <data name="Info_ConfigExportComplete" xml:space="preserve">
+    <value>EntitiesToDTOs configuration exported.</value>
+  </data>
+  <data name="Info_ConfigImportComplete" xml:space="preserve">
+    <value>EntitiesToDTOs configuration imported.</value>
+  </data>
+  <data name="Info_LatestConfigLoaded" xml:space="preserve">
+    <value>Latest EntitiesToDTOs configuration loaded.</value>
+  </data>
+  <data name="Warning_AssemblersTargetNotFound" xml:space="preserve">
+    <value>Could not find Assemblers {0} target "{1}".</value>
+  </data>
+  <data name="Warning_DTOsTargetNotFound" xml:space="preserve">
+    <value>Could not find DTOs {0} target "{1}".</value>
+  </data>
+  <data name="Warning_EdmxSourceNotFound" xml:space="preserve">
+    <value>Not able to find EDMX Source named "{0}".</value>
+  </data>
+  <data name="AssemblerToDTOAssignment" xml:space="preserve">
+    <value>dto.{0} = {1};</value>
+  </data>
+  <data name="AssemblerToEntityAssignment" xml:space="preserve">
+    <value>entity.{0} = {1};</value>
+  </data>
+  <data name="AssemblerToDTOAssignmentEntityProp" xml:space="preserve">
+    <value>entity.{0}</value>
+  </data>
+  <data name="AssemblerToEntityAssignmentDTOProp" xml:space="preserve">
+    <value>dto.{0}</value>
+  </data>
+  <data name="AssemblySystemDataEntity" xml:space="preserve">
+    <value>System.Data.Entity</value>
+  </data>
+  <data name="AssemblySystemDataObjectsDataClasses" xml:space="preserve">
+    <value>System.Data.Objects.DataClasses</value>
+  </data>
+  <data name="Error_EntitiesNamespaceNotFound" xml:space="preserve">
+    <value>Could not found entities namespace.</value>
+  </data>
+  <data name="AssemblerToDTOInstanceChild" xml:space="preserve">
+    <value>dto = (entity as {0}).ToDTO();</value>
+  </data>
+  <data name="AssemblerToDTOInstanceElseIfChild" xml:space="preserve">
+    <value>else if (entity is {0})</value>
+  </data>
+  <data name="AssemblerToDTOInstanceIfChild" xml:space="preserve">
+    <value>if (entity is {0})</value>
+  </data>
+  <data name="AssemblerToDTOInstanceNew" xml:space="preserve">
+    <value>dto = new {0}();</value>
+  </data>
+  <data name="AssemblerToDTOInstance_Wildcard" xml:space="preserve">
+    <value>&lt;%=ToDTOInstance%&gt;</value>
+  </data>
+  <data name="AssemblerToDTOInstanceElse" xml:space="preserve">
+    <value>else</value>
+  </data>
+  <data name="AssemblerToEntityInstanceChild" xml:space="preserve">
+    <value>entity = (dto as {0}).ToEntity();</value>
+  </data>
+  <data name="AssemblerToEntityInstanceElse" xml:space="preserve">
+    <value>else</value>
+  </data>
+  <data name="AssemblerToEntityInstanceElseIfChild" xml:space="preserve">
+    <value>else if (dto is {0})</value>
+  </data>
+  <data name="AssemblerToEntityInstanceIfChild" xml:space="preserve">
+    <value>if (dto is {0})</value>
+  </data>
+  <data name="AssemblerToEntityInstanceNew" xml:space="preserve">
+    <value>entity = new {0}();</value>
+  </data>
+  <data name="AssemblerToEntityInstance_Wildcard" xml:space="preserve">
+    <value>&lt;%=ToEntityInstance%&gt;</value>
+  </data>
+  <data name="AssemblerName_Wildcard" xml:space="preserve">
+    <value>&lt;%=AssemblerName%&gt;</value>
+  </data>
+  <data name="AssemblerToDTOAssignmentEntityNavKey" xml:space="preserve">
+    <value>entity.{0}.{1}</value>
+  </data>
+  <data name="AssemblerToDTOAssignmentEntityNavKeyList" xml:space="preserve">
+    <value>entity.{0}.Select(p =&gt;p.{1}).ToList()</value>
+  </data>
+  <data name="AssemblySystemCore" xml:space="preserve">
+    <value>System.Core</value>
+  </data>
+  <data name="AssemblySystemLinq" xml:space="preserve">
+    <value>System.Linq</value>
+  </data>
+  <data name="HelpWindow_Caption" xml:space="preserve">
+    <value>Help - EntitiesToDTOs - v{0}</value>
+  </data>
+  <data name="Warning_CouldNotLogMessage" xml:space="preserve">
+    <value>[EntitiesToDTOs:002] Contact technical support. Could not log message: {0}</value>
+  </data>
+  <data name="Warning_ExceptionWhenLog" xml:space="preserve">
+    <value>Exception thrown when trying to log: {0}</value>
+  </data>
+  <data name="CSharpCodeGetSetWithBrackets" xml:space="preserve">
+    <value> { get; set; }</value>
+  </data>
+  <data name="ErrorList_ProviderGUID" xml:space="preserve">
+    <value>C0CAED8E-03C6-4E8E-BE81-31F959641264</value>
+  </data>
+  <data name="ErrorList_ProviderName" xml:space="preserve">
+    <value>EntitiesToDTOs</value>
+  </data>
+  <data name="Error_ErrorNavigatingTo" xml:space="preserve">
+    <value>Error navigating to {0}</value>
+  </data>
+  <data name="Info_GenerationCompleteWithWarnings" xml:space="preserve">
+    <value>Generation completed with warnings. See Error List.</value>
+  </data>
+  <data name="Warning_Caption" xml:space="preserve">
+    <value>Warning - EntitiesToDTOs</value>
+  </data>
+  <data name="Warning_WarningsWhenLoadingConfiguration" xml:space="preserve">
+    <value>Warnings loading configuration:
+{0}</value>
+  </data>
+  <data name="Info_Ready" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="Info_MethodEnd" xml:space="preserve">
+    <value>Method END: {0}</value>
+  </data>
+  <data name="Info_MethodStart" xml:space="preserve">
+    <value>Method START: {0}</value>
+  </data>
+  <data name="23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AssemblerToDTOInstanceNull" xml:space="preserve">
+    <value>{0} dto = null;</value>
+  </data>
+  <data name="AssemblerToEntityInstanceNull" xml:space="preserve">
+    <value>{0} entity = null;</value>
+  </data>
+  <data name="CSharpCodeVar" xml:space="preserve">
+    <value>var</value>
+  </data>
+  <data name="Error_NoTypesToGenerateFrom" xml:space="preserve">
+    <value>Please, select the types from which to generate the DTOs.</value>
+  </data>
+  <data name="Warning_AbstractWithoutChildsAssembler" xml:space="preserve">
+    <value>[EntitiesToDTOs:007] Cannot generate assembler of Entity "{0}". It is abstract and childs were not found.</value>
+  </data>
+  <data name="img_warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warning_BaseTypeNotGenerated" xml:space="preserve">
+    <value>"{0}" is the base type but is not generated.</value>
+  </data>
+  <data name="Warning_DestTypeNotGenerated" xml:space="preserve">
+    <value>"{0}" is related but is not generated.</value>
+  </data>
+  <data name="Error_IdentifierWordEmpty" xml:space="preserve">
+    <value>Identifier word cannot be empty.</value>
+  </data>
+  <data name="Error_HeaderCommentInvalidChars" xml:space="preserve">
+    <value>Do not include "/*" or "*/" in header comment.</value>
+  </data>
+  <data name="AssemblerToDTOAssignmentEntityComplexProp" xml:space="preserve">
+    <value>entity.{0}.ToDTO()</value>
+  </data>
+  <data name="AssemblerToEntityAssignmentDTOComplexProp" xml:space="preserve">
+    <value>dto.{0}.ToEntity()</value>
+  </data>
+  <data name="VersionInfoBetaSuffix" xml:space="preserve">
+    <value>BetaSuffix:</value>
+  </data>
+  <data name="ReleasesURL" xml:space="preserve">
+    <value>https://entitiestodtos.svn.codeplex.com/svn/releases/releases.xml</value>
+  </data>
+  <data name="VersionInfoReleaseID" xml:space="preserve">
+    <value>ReleaseID:</value>
+  </data>
+  <data name="AddInConfigFileName" xml:space="preserve">
+    <value>EntitiesToDTOs.cfg</value>
+  </data>
+  <data name="Info_NewRelease" xml:space="preserve">
+    <value>EntitiesToDTOs.v{0} is available to download!</value>
+  </data>
+  <data name="VersionInfoSplitter" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="VSGuidPhysicalFile" xml:space="preserve">
+    <value>{6BB5F8EE-4483-11D3-8BCF-00C04F8EC28C}</value>
+  </data>
+  <data name="VSGuidPhysicalFolder" xml:space="preserve">
+    <value>{6BB5F8EF-4483-11D3-8BCF-00C04F8EC28C}</value>
+  </data>
+  <data name="VSGuidSubproject" xml:space="preserve">
+    <value>{EA6618E8-6E24-4528-94BE-6889FE16485C}</value>
+  </data>
+  <data name="VSGuidVirtualFolder" xml:space="preserve">
+    <value>{6BB5F8F0-4483-11D3-8BCF-00C04F8EC28C}</value>
+  </data>
+  <data name="DefaultSolutionName" xml:space="preserve">
+    <value>Solution</value>
+  </data>
+  <data name="VSProjectFolderProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="ProjectFolderLevelSeparator" xml:space="preserve">
+    <value>/</value>
+  </data>
+  <data name="VSProjectFolderServiceReferences" xml:space="preserve">
+    <value>Service References</value>
+  </data>
+  <data name="Properties_LocalPath" xml:space="preserve">
+    <value>LocalPath</value>
+  </data>
+  <data name="AdTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AdTemplate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AdvertDefaultLinkURL" xml:space="preserve">
+    <value>http://entitiestodtos.codeplex.com/wikipage?title=Advertising</value>
+  </data>
+  <data name="AdvertImageFileName" xml:space="preserve">
+    <value>Advert_{0}.png</value>
+  </data>
+  <data name="AdLoading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AdLoading.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AdvertsBaseURL" xml:space="preserve">
+    <value>https://entitiestodtos.svn.codeplex.com/svn/Ads/</value>
+  </data>
+  <data name="AdvertsConfigFileName" xml:space="preserve">
+    <value>Ads.xml</value>
+  </data>
+  <data name="AdvertsFolderName" xml:space="preserve">
+    <value>Adverts\</value>
+  </data>
+  <data name="Advert_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Advert_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EntitiesToDTOsTempFolderName" xml:space="preserve">
+    <value>EntitiesToDTOs\</value>
+  </data>
+  <data name="Error_CsdlSchemaNamespaceMissing" xml:space="preserve">
+    <value>Could not find CSDL Schema namespace.</value>
+  </data>
+  <data name="DonateURL" xml:space="preserve">
+    <value>http://entitiestodtos.codeplex.com/wikipage?title=Donate</value>
+  </data>
+  <data name="UpdateWindow_Caption" xml:space="preserve">
+    <value>Update - EntitiesToDTOs</value>
+  </data>
+  <data name="UpdateWindow_ChangePrefix" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="CreateIssueURL" xml:space="preserve">
+    <value>http://entitiestodtos.codeplex.com/WorkItem/Create</value>
+  </data>
+  <data name="Error_MissingVersionInfo" xml:space="preserve">
+    <value>Version info is missing.</value>
+  </data>
+  <data name="VersionInfoDownloadID" xml:space="preserve">
+    <value>DownloadID:</value>
+  </data>
+  <data name="RateReleaseWindow_Caption" xml:space="preserve">
+    <value>Rate - EntitiesToDTOs</value>
+  </data>
+  <data name="RateReleaseURL" xml:space="preserve">
+    <value>http://entitiestodtos.codeplex.com/releases/view/{0}?RateReview=true</value>
+  </data>
+  <data name="TempClassName" xml:space="preserve">
+    <value>EntitiesToDTOsTempClassName</value>
+  </data>
+  <data name="Warning_ManuallyAddReferenceForEnum" xml:space="preserve">
+    <value>[EntitiesToDTOs:008] If needed, add a reference to the Project that contains enum {0}.</value>
+  </data>
+  <data name="Warning_PropertyNameConflict" xml:space="preserve">
+    <value>[EntitiesToDTOs:009] Entity "{0}" has a property named "{1}" which conflicts with a navigation property to "{2}" because Association of DTOs is by Key and generates the same name. Rename the property if possible or use Association by Class. Skipping this navigation property now.</value>
+  </data>
+</root>

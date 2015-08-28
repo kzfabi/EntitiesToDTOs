@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="BankModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="BankModelTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="BankModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="BankModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clients" EntityType="BankModel.Client" />
+          <EntitySet Name="Accounts" EntityType="BankModel.Account" />
+          <AssociationSet Name="Entity1Entity2" Association="BankModel.Entity1Entity2">
+            <End Role="Entity1" EntitySet="Clients" />
+            <End Role="Entity2" EntitySet="Accounts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Client">
+          <Key>
+            <PropertyRef Name="ClientID" />
+          </Key>
+          <Property Type="Int32" Name="ClientID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Accounts" Relationship="BankModel.Entity1Entity2" FromRole="Entity1" ToRole="Entity2" />
+          <Property Type="String" Name="FirstName" Nullable="false" />
+          <Property Type="String" Name="LastName" Nullable="false" />
+          <Property Type="BankModel.ClientType" Name="TypeOfClient" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="AccountID" />
+          </Key>
+          <Property Type="Int32" Name="AccountID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Client" Relationship="BankModel.Entity1Entity2" FromRole="Entity2" ToRole="Entity1" />
+          <Property Type="Decimal" Name="Balance" Nullable="false" />
+          <Property Type="BankModel.CurrencyType" Name="Currency" Nullable="false" />
+          <Property Type="BankModel.AccountType" Name="TypeOfAccount" Nullable="false" />
+        </EntityType>
+        <Association Name="Entity1Entity2">
+          <End Type="BankModel.Client" Role="Entity1" Multiplicity="1" />
+          <End Type="BankModel.Account" Role="Entity2" Multiplicity="*" />
+        </Association>
+        <EnumType Name="CurrencyType" UnderlyingType="Int16">
+          <Member Name="USD" />
+          <Member Name="UYU" />
+          <Member Name="ARS" />
+          <Member Name="BRL" />
+        </EnumType>
+        <EnumType Name="ClientType" cg:ExternalTypeName="VS2012TestEdmx.Enums.ClientType" />
+        <EnumType Name="AccountType" cg:ExternalTypeName="SandboxVS2010.Enums.AccountType" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="BankModel" />
+        <Alias Key="Target" Value="BankModel.Store" />
+        <EntityContainerMapping CdmEntityContainer="BankModelContainer" StorageEntityContainer="BankModelTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

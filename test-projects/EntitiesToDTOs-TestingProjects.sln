@@ -1,0 +1,159 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorks", "AdventureWorks\AdventureWorks.csproj", "{6B02CBD4-DC5C-4A72-872F-AB58934F955C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorksDW2008R2", "AdventureWorksDW2008R2\AdventureWorksDW2008R2.csproj", "{A918B199-EA76-41D9-9B51-94D7D7C66F1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureWorksLT2008R2", "AdventureWorksLT2008R2\AdventureWorksLT2008R2.csproj", "{6CFB4FBE-F838-43EA-BF25-E875DD1AADCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind", "Northwind\Northwind.csproj", "{05E7234B-A64F-4A4F-A00E-AE15BB17C928}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sandboxes", "Sandboxes", "{812C3F60-4770-467E-A2C9-BA46F4CE1CB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "DTOs\DTOs.csproj", "{04926422-C21F-4092-85DD-0CDAE32641D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assemblers", "Assemblers\Assemblers.csproj", "{FE4EAB15-ACA2-42E6-865B-A44504F30F19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshop", "CarWorkshop\CarWorkshop.csproj", "{C08F8809-B303-44A3-B5B6-F4149680B3B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopPOCO", "CarWorkshopPOCO\CarWorkshopPOCO.csproj", "{7715F7B0-DD7E-4787-8172-51433A9D7EA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopDbContext", "CarWorkshopDbContext\CarWorkshopDbContext.csproj", "{2EAE32B4-C0DF-4191-8C2A-77EBA50185D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopDbContextWCF", "CarWorkshopDbContextWCF\CarWorkshopDbContextWCF.csproj", "{31761655-63C5-4AD7-B2D9-31FA5D1FE95E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopPOCOWCF", "CarWorkshopPOCOWCF\CarWorkshopPOCOWCF.csproj", "{442C2B3B-4782-4BDB-8F51-36E1C8FE2E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarWorkshopCodeFirst", "CarWorkshopCodeFirst\CarWorkshopCodeFirst.csproj", "{6CCBC920-FA3E-44F7-9AD8-326CC65704D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyProject", "EmptyProject\EmptyProject.csproj", "{41903246-7928-4250-A414-4F5450E6F014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS2012TestEdmx", "VS2012TestEdmx\VS2012TestEdmx.csproj", "{8A36CDB2-3FAC-41E1-AAA6-7D37B8773CC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandboxVS2010", "SandboxVS2010\SandboxVS2010.csproj", "{933301EB-461F-4317-AC00-B9E5FD29F3A2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs33
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AdventureWorks\\AdventureWorks.csproj
+		SccProjectName1 = AdventureWorks
+		SccLocalPath1 = AdventureWorks
+		SccProjectUniqueName2 = AdventureWorksDW2008R2\\AdventureWorksDW2008R2.csproj
+		SccProjectName2 = AdventureWorksDW2008R2
+		SccLocalPath2 = AdventureWorksDW2008R2
+		SccProjectUniqueName3 = AdventureWorksLT2008R2\\AdventureWorksLT2008R2.csproj
+		SccProjectName3 = AdventureWorksLT2008R2
+		SccLocalPath3 = AdventureWorksLT2008R2
+		SccProjectUniqueName4 = Northwind\\Northwind.csproj
+		SccProjectName4 = Northwind
+		SccLocalPath4 = Northwind
+		SccProjectUniqueName5 = DTOs\\DTOs.csproj
+		SccProjectTopLevelParentUniqueName5 = EntitiesToDTOs-TestingProjects.sln
+		SccProjectName5 = DTOs
+		SccLocalPath5 = DTOs
+		SccProjectUniqueName6 = Assemblers\\Assemblers.csproj
+		SccProjectTopLevelParentUniqueName6 = EntitiesToDTOs-TestingProjects.sln
+		SccProjectName6 = Assemblers
+		SccLocalPath6 = Assemblers
+		SccProjectUniqueName7 = CarWorkshop\\CarWorkshop.csproj
+		SccProjectName7 = CarWorkshop
+		SccLocalPath7 = CarWorkshop
+		SccProjectUniqueName8 = CarWorkshopPOCO\\CarWorkshopPOCO.csproj
+		SccProjectName8 = CarWorkshopPOCO
+		SccLocalPath8 = CarWorkshopPOCO
+		SccProjectUniqueName9 = CarWorkshopDbContext\\CarWorkshopDbContext.csproj
+		SccProjectName9 = CarWorkshopDbContext
+		SccLocalPath9 = CarWorkshopDbContext
+		SccProjectUniqueName10 = CarWorkshopDbContextWCF\\CarWorkshopDbContextWCF.csproj
+		SccProjectName10 = CarWorkshopDbContextWCF
+		SccLocalPath10 = CarWorkshopDbContextWCF
+		SccProjectUniqueName11 = CarWorkshopPOCOWCF\\CarWorkshopPOCOWCF.csproj
+		SccProjectName11 = CarWorkshopPOCOWCF
+		SccLocalPath11 = CarWorkshopPOCOWCF
+		SccProjectUniqueName12 = CarWorkshopCodeFirst\\CarWorkshopCodeFirst.csproj
+		SccProjectName12 = CarWorkshopCodeFirst
+		SccLocalPath12 = CarWorkshopCodeFirst
+		SccProjectUniqueName13 = EmptyProject\\EmptyProject.csproj
+		SccProjectName13 = EmptyProject
+		SccLocalPath13 = EmptyProject
+		SccProjectUniqueName14 = VS2012TestEdmx\\VS2012TestEdmx.csproj
+		SccProjectName14 = VS2012TestEdmx
+		SccLocalPath14 = VS2012TestEdmx
+		SccProjectUniqueName15 = SandboxVS2010\\SandboxVS2010.csproj
+		SccProjectTopLevelParentUniqueName15 = EntitiesToDTOs-TestingProjects.sln
+		SccProjectName15 = SandboxVS2010
+		SccLocalPath15 = SandboxVS2010
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B02CBD4-DC5C-4A72-872F-AB58934F955C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B02CBD4-DC5C-4A72-872F-AB58934F955C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B02CBD4-DC5C-4A72-872F-AB58934F955C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A918B199-EA76-41D9-9B51-94D7D7C66F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A918B199-EA76-41D9-9B51-94D7D7C66F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A918B199-EA76-41D9-9B51-94D7D7C66F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFB4FBE-F838-43EA-BF25-E875DD1AADCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFB4FBE-F838-43EA-BF25-E875DD1AADCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFB4FBE-F838-43EA-BF25-E875DD1AADCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E7234B-A64F-4A4F-A00E-AE15BB17C928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E7234B-A64F-4A4F-A00E-AE15BB17C928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E7234B-A64F-4A4F-A00E-AE15BB17C928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04926422-C21F-4092-85DD-0CDAE32641D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04926422-C21F-4092-85DD-0CDAE32641D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04926422-C21F-4092-85DD-0CDAE32641D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4EAB15-ACA2-42E6-865B-A44504F30F19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4EAB15-ACA2-42E6-865B-A44504F30F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4EAB15-ACA2-42E6-865B-A44504F30F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08F8809-B303-44A3-B5B6-F4149680B3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08F8809-B303-44A3-B5B6-F4149680B3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08F8809-B303-44A3-B5B6-F4149680B3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08F8809-B303-44A3-B5B6-F4149680B3B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7715F7B0-DD7E-4787-8172-51433A9D7EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7715F7B0-DD7E-4787-8172-51433A9D7EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7715F7B0-DD7E-4787-8172-51433A9D7EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7715F7B0-DD7E-4787-8172-51433A9D7EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAE32B4-C0DF-4191-8C2A-77EBA50185D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAE32B4-C0DF-4191-8C2A-77EBA50185D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAE32B4-C0DF-4191-8C2A-77EBA50185D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAE32B4-C0DF-4191-8C2A-77EBA50185D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31761655-63C5-4AD7-B2D9-31FA5D1FE95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31761655-63C5-4AD7-B2D9-31FA5D1FE95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31761655-63C5-4AD7-B2D9-31FA5D1FE95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31761655-63C5-4AD7-B2D9-31FA5D1FE95E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442C2B3B-4782-4BDB-8F51-36E1C8FE2E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442C2B3B-4782-4BDB-8F51-36E1C8FE2E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442C2B3B-4782-4BDB-8F51-36E1C8FE2E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442C2B3B-4782-4BDB-8F51-36E1C8FE2E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CCBC920-FA3E-44F7-9AD8-326CC65704D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CCBC920-FA3E-44F7-9AD8-326CC65704D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CCBC920-FA3E-44F7-9AD8-326CC65704D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CCBC920-FA3E-44F7-9AD8-326CC65704D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41903246-7928-4250-A414-4F5450E6F014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41903246-7928-4250-A414-4F5450E6F014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41903246-7928-4250-A414-4F5450E6F014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41903246-7928-4250-A414-4F5450E6F014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A36CDB2-3FAC-41E1-AAA6-7D37B8773CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A36CDB2-3FAC-41E1-AAA6-7D37B8773CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A36CDB2-3FAC-41E1-AAA6-7D37B8773CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A36CDB2-3FAC-41E1-AAA6-7D37B8773CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933301EB-461F-4317-AC00-B9E5FD29F3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933301EB-461F-4317-AC00-B9E5FD29F3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933301EB-461F-4317-AC00-B9E5FD29F3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933301EB-461F-4317-AC00-B9E5FD29F3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04926422-C21F-4092-85DD-0CDAE32641D2} = {812C3F60-4770-467E-A2C9-BA46F4CE1CB5}
+		{FE4EAB15-ACA2-42E6-865B-A44504F30F19} = {812C3F60-4770-467E-A2C9-BA46F4CE1CB5}
+		{933301EB-461F-4317-AC00-B9E5FD29F3A2} = {812C3F60-4770-467E-A2C9-BA46F4CE1CB5}
+	EndGlobalSection
+EndGlobal

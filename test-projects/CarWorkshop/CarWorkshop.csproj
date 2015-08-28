@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C08F8809-B303-44A3-B5B6-F4149680B3B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarWorkshop</RootNamespace>
+    <AssemblyName>CarWorkshop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarWorkshop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarWorkshop.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="CarWorkshopDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarWorkshopDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarWorkshopDbContextWCF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarWorkshopDbContextWCF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarWorkshopPOCO.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarWorkshopPOCO.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CarWorkshopPOCOWCF.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarWorkshopPOCOWCF.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="CarWorkshop.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CarWorkshop.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="CarWorkshopDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CarWorkshopDbContext.Context.cs</LastGenOutput>
+      <CustomToolNamespace>CarWorkshopDbContext</CustomToolNamespace>
+    </None>
+    <None Include="CarWorkshopDbContextWCF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CarWorkshopDbContextWCF.Context.cs</LastGenOutput>
+      <CustomToolNamespace>CarWorkshopDbContextWCF</CustomToolNamespace>
+    </None>
+    <None Include="CarWorkshopPOCO.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CarWorkshopPOCO.Context.cs</LastGenOutput>
+      <CustomToolNamespace>CarWorkshopPOCO</CustomToolNamespace>
+    </None>
+    <None Include="CarWorkshopPOCOWCF.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CarWorkshopPOCOWCF.Context.cs</LastGenOutput>
+      <CustomToolNamespace>CarWorkshopPOCOWCF</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarWorkshopDbContextWCF\CarWorkshopDbContextWCF.csproj">
+      <Project>{31761655-63C5-4AD7-B2D9-31FA5D1FE95E}</Project>
+      <Name>CarWorkshopDbContextWCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarWorkshopDbContext\CarWorkshopDbContext.csproj">
+      <Project>{2EAE32B4-C0DF-4191-8C2A-77EBA50185D5}</Project>
+      <Name>CarWorkshopDbContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarWorkshopPOCOWCF\CarWorkshopPOCOWCF.csproj">
+      <Project>{442C2B3B-4782-4BDB-8F51-36E1C8FE2E19}</Project>
+      <Name>CarWorkshopPOCOWCF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarWorkshopPOCO\CarWorkshopPOCO.csproj">
+      <Project>{7715F7B0-DD7E-4787-8172-51433A9D7EA3}</Project>
+      <Name>CarWorkshopPOCO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

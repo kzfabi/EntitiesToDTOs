@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A36CDB2-3FAC-41E1-AAA6-7D37B8773CC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VS2012TestEdmx</RootNamespace>
+    <AssemblyName>VS2012TestEdmx</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animal.cs">
+      <DependentUpon>ZooModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banking\Account.cs">
+      <DependentUpon>BankModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banking\BankModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banking\BankModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banking\BankModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Banking\Client.cs">
+      <DependentUpon>BankModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banking\CurrencyType.cs">
+      <DependentUpon>BankModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTOs\DTOs.cs" />
+    <Compile Include="DTOs\Assemblers.cs" />
+    <Compile Include="Enums\ClientType.cs" />
+    <Compile Include="Location.cs">
+      <DependentUpon>ZooModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZooModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZooModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZooModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZooModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ZooPark.cs">
+      <DependentUpon>ZooModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ZooModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ZooModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Banking\BankModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BankModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Banking\BankModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BankModel.edmx</DependentUpon>
+      <LastGenOutput>BankModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Banking\BankModel.edmx.diagram">
+      <DependentUpon>BankModel.edmx</DependentUpon>
+    </None>
+    <None Include="Banking\BankModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BankModel.edmx</DependentUpon>
+      <LastGenOutput>BankModel.cs</LastGenOutput>
+    </None>
+    <None Include="ZooModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ZooModel.edmx</DependentUpon>
+      <LastGenOutput>ZooModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ZooModel.edmx.diagram">
+      <DependentUpon>ZooModel.edmx</DependentUpon>
+    </None>
+    <None Include="ZooModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ZooModel.edmx</DependentUpon>
+      <LastGenOutput>ZooModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SandboxVS2010\SandboxVS2010.csproj">
+      <Project>{933301eb-461f-4317-ac00-b9e5fd29f3a2}</Project>
+      <Name>SandboxVS2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

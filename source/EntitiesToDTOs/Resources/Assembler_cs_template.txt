@@ -1,0 +1,75 @@
+
+/// <summary>
+/// Assembler for <see cref="<%=EntityName%>"/> and <see cref="<%=DTOName%>"/>.
+/// </summary>
+<%=AssemblerAccess%> static partial class <%=AssemblerName%>
+{
+    /// <summary>
+    /// Invoked when <see cref="ToDTO"/> operation is about to return.
+    /// </summary>
+    /// <param name="dto"><see cref="<%=DTOName%>"/> converted from <see cref="<%=EntityName%>"/>.</param>
+	static partial void OnDTO(this <%=EntityName%> entity, <%=DTOName%> dto);
+
+	/// <summary>
+    /// Invoked when <see cref="ToEntity"/> operation is about to return.
+    /// </summary>
+    /// <param name="entity"><see cref="<%=EntityName%>"/> converted from <see cref="<%=DTOName%>"/>.</param>
+	static partial void OnEntity(this <%=DTOName%> dto, <%=EntityName%> entity);
+
+	/// <summary>
+    /// Converts this instance of <see cref="<%=DTOName%>"/> to an instance of <see cref="<%=EntityName%>"/>.
+    /// </summary>
+    /// <param name="dto"><see cref="<%=DTOName%>"/> to convert.</param>
+    public static <%=EntityName%> ToEntity(this <%=DTOName%> dto)
+    {
+        if (dto == null) return null;
+
+        <%=ToEntityInstance%>
+        <%=ToEntityAssignments%>
+
+        dto.OnEntity(entity);
+
+        return entity;
+    }
+
+	/// <summary>
+    /// Converts this instance of <see cref="<%=EntityName%>"/> to an instance of <see cref="<%=DTOName%>"/>.
+    /// </summary>
+    /// <param name="entity"><see cref="<%=EntityName%>"/> to convert.</param>
+    public static <%=DTOName%> ToDTO(this <%=EntityName%> entity)
+    {
+        if (entity == null) return null;
+
+        <%=ToDTOInstance%>
+        <%=ToDTOAssignments%>
+
+        entity.OnDTO(dto);
+
+        return dto;
+    }
+
+    /// <summary>
+    /// Converts each instance of <see cref="<%=DTOName%>"/> to an instance of <see cref="<%=EntityName%>"/>.
+    /// </summary>
+    /// <param name="dtos"></param>
+    /// <returns></returns>
+    public static List<<%=EntityName%>> ToEntities(this IEnumerable<<%=DTOName%>> dtos)
+    {
+        if (dtos == null) return null;
+
+        return dtos.Select(e => e.ToEntity()).ToList();
+    }
+
+    /// <summary>
+    /// Converts each instance of <see cref="<%=EntityName%>"/> to an instance of <see cref="<%=DTOName%>"/>.
+    /// </summary>
+    /// <param name="entities"></param>
+    /// <returns></returns>
+    public static List<<%=DTOName%>> ToDTOs(this IEnumerable<<%=EntityName%>> entities)
+    {
+        if (entities == null) return null;
+
+        return entities.Select(e => e.ToDTO()).ToList();
+    }
+
+}

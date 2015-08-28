@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl" Namespace="CarWorkshop.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="CarWorkshopTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="CarWorkshop" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="CarWorkshopContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Employees" EntityType="CarWorkshop.Employee" />
+          <EntitySet Name="EmployeeTypes" EntityType="CarWorkshop.EmployeeType" />
+          <AssociationSet Name="EmployeeEmployeeType" Association="CarWorkshop.EmployeeEmployeeType">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="EmployeeType" EntitySet="EmployeeTypes" />
+          </AssociationSet>
+          <EntitySet Name="Vehicles" EntityType="CarWorkshop.Vehicle" />
+          <AssociationSet Name="EmployeeVehicle" Association="CarWorkshop.EmployeeVehicle">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Vehicle" EntitySet="Vehicles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Type="Int32" Name="EmployeeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FirstName" Nullable="false" />
+          <Property Type="String" Name="LastName" Nullable="false" />
+          <NavigationProperty Name="EmployeeType" Relationship="CarWorkshop.EmployeeEmployeeType" FromRole="Employee" ToRole="EmployeeType" />
+          <Property Type="Double" Name="Salary" Nullable="false" />
+          <Property Type="DateTime" Name="Birthdate" Nullable="true" />
+          <Property Type="String" Name="Event" Nullable="false" />
+          <NavigationProperty Name="Vehicles" Relationship="CarWorkshop.EmployeeVehicle" FromRole="Employee" ToRole="Vehicle" />
+        </EntityType>
+        <EntityType Name="EmployeeType" Abstract="true">
+          <Key>
+            <PropertyRef Name="EmployeeTypeID" />
+          </Key>
+          <Property Name="EmployeeTypeID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+          <NavigationProperty Name="Employees" Relationship="CarWorkshop.EmployeeEmployeeType" FromRole="EmployeeType" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="EmployeeMechanic" BaseType="CarWorkshop.EmployeeType">
+          <Property Type="Boolean" Name="NeedsSupervison" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmployeePainter" BaseType="CarWorkshop.EmployeeType">
+          <Property Type="Boolean" Name="IsIndependent" Nullable="false" />
+        </EntityType>
+        <Association Name="EmployeeEmployeeType">
+          <End Type="CarWorkshop.Employee" Role="Employee" Multiplicity="*" />
+          <End Type="CarWorkshop.EmployeeType" Role="EmployeeType" Multiplicity="1" />
+        </Association>
+        <EntityType Name="Vehicle">
+          <Key>
+            <PropertyRef Name="VehicleID" />
+          </Key>
+          <Property Type="Int32" Name="VehicleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Employee" Relationship="CarWorkshop.EmployeeVehicle" FromRole="Vehicle" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="VehicleCar" BaseType="CarWorkshop.Vehicle">
+          <Property Type="Boolean" Name="Is4WD" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleTruck" BaseType="CarWorkshop.Vehicle">
+          <Property Type="Boolean" Name="HasCargo" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleBike" BaseType="CarWorkshop.Vehicle">
+          <Property Type="Int32" Name="Passengers" Nullable="false" />
+          <Property Name="ComplexProperty" Type="CarWorkshop.MyComplexT" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleBikeNormal" BaseType="CarWorkshop.VehicleBike">
+          <Property Type="String" Name="TestProp" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleBikeSidecar" BaseType="CarWorkshop.VehicleBike">
+          <Property Type="String" Name="AnotherProp" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="MyComplexT">
+          <Property Type="Boolean" Name="PropBool" Nullable="false" />
+          <Property Type="Int32" Name="PropInt" Nullable="false" />
+        </ComplexType>
+        <Association Name="EmployeeVehicle">
+          <End Type="CarWorkshop.Employee" Role="Employee" Multiplicity="1" />
+          <End Type="CarWorkshop.Vehicle" Role="Vehicle" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="CarWorkshop" />
+        <Alias Key="Target" Value="CarWorkshop.Store" />
+        <EntityContainerMapping CdmEntityContainer="CarWorkshopContainer" StorageEntityContainer="CarWorkshopTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="CarWorkshop" >
+        <EntityTypeShape EntityType="CarWorkshop.Employee" Width="1.5" PointX="2.875" PointY="0.5" Height="2.364889322916667" />
+        <EntityTypeShape EntityType="CarWorkshop.EmployeeType" Width="1.75" PointX="7" PointY="0.5" Height="1.4033821614583339" />
+        <EntityTypeShape EntityType="CarWorkshop.EmployeeMechanic" Width="1.875" PointX="5.75" PointY="2.75" Height="1.2110807291666665" />
+        <EntityTypeShape EntityType="CarWorkshop.EmployeePainter" Width="1.875" PointX="8.625" PointY="2.75" Height="1.2110807291666665" />
+        <AssociationConnector Association="CarWorkshop.EmployeeEmployeeType">
+          <ConnectorPoint PointX="4.375" PointY="1.2016910807291672" />
+          <ConnectorPoint PointX="7" PointY="1.2016910807291672" />
+        </AssociationConnector>
+        <InheritanceConnector EntityType="CarWorkshop.EmployeePainter">
+          <ConnectorPoint PointX="7.875" PointY="1.9033821614583339" />
+          <ConnectorPoint PointX="7.875" PointY="2.375" />
+          <ConnectorPoint PointX="9.5625" PointY="2.375" />
+          <ConnectorPoint PointX="9.5625" PointY="2.75" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="CarWorkshop.EmployeeMechanic">
+          <ConnectorPoint PointX="7.875" PointY="1.9033821614583339" />
+          <ConnectorPoint PointX="7.875" PointY="2.375" />
+          <ConnectorPoint PointX="6.6875" PointY="2.375" />
+          <ConnectorPoint PointX="6.6875" PointY="2.75" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="CarWorkshop.Vehicle" Width="1.5" PointX="2.875" PointY="4" Height="1.2110807291666665" />
+        <EntityTypeShape EntityType="CarWorkshop.VehicleCar" Width="1.5" PointX="7.5" PointY="5.5" Height="1.2110807291666665" />
+        <EntityTypeShape EntityType="CarWorkshop.VehicleTruck" Width="1.5" PointX="9.375" PointY="5.5" Height="1.2110807291666665" />
+        <EntityTypeShape EntityType="CarWorkshop.VehicleBike" Width="1.5" PointX="5.625" PointY="5.5" Height="1.5956835937499996" />
+        <InheritanceConnector EntityType="CarWorkshop.VehicleBike" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.625" PointY="5.2110807291666665" />
+          <ConnectorPoint PointX="3.625" PointY="5.4610807291666674" />
+          <ConnectorPoint PointX="4.625" PointY="5.4610807291666674" />
+          <ConnectorPoint PointX="4.625" PointY="5.125" />
+          <ConnectorPoint PointX="6.375" PointY="5.125" />
+          <ConnectorPoint PointX="6.375" PointY="5.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="CarWorkshop.VehicleCar">
+          <ConnectorPoint PointX="3.625" PointY="5.2110807291666665" />
+          <ConnectorPoint PointX="3.625" PointY="5.4610807291666674" />
+          <ConnectorPoint PointX="4.625" PointY="5.4610807291666674" />
+          <ConnectorPoint PointX="4.625" PointY="5.125" />
+          <ConnectorPoint PointX="8.25" PointY="5.125" />
+          <ConnectorPoint PointX="8.25" PointY="5.5" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="CarWorkshop.VehicleTruck">
+          <ConnectorPoint PointX="3.625" PointY="5.2110807291666665" />
+          <ConnectorPoint PointX="3.625" PointY="5.4610807291666674" />
+          <ConnectorPoint PointX="4.625" PointY="5.4610807291666674" />
+          <ConnectorPoint PointX="4.625" PointY="5.125" />
+          <ConnectorPoint PointX="10.125" PointY="5.125" />
+          <ConnectorPoint PointX="10.125" PointY="5.5" />
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="CarWorkshop.VehicleBikeNormal" Width="2" PointX="4.125" PointY="7.625" Height="1.2110807291666657" />
+        <EntityTypeShape EntityType="CarWorkshop.VehicleBikeSidecar" Width="1.75" PointX="6.625" PointY="7.625" Height="1.2110807291666657" />
+        <InheritanceConnector EntityType="CarWorkshop.VehicleBikeNormal" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.375" PointY="7.09568359375" />
+          <ConnectorPoint PointX="6.375" PointY="7.3250000000000011" />
+          <ConnectorPoint PointX="5.125" PointY="7.3250000000000011" />
+          <ConnectorPoint PointX="5.125" PointY="7.625" />
+        </InheritanceConnector>
+        <InheritanceConnector EntityType="CarWorkshop.VehicleBikeSidecar" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.375" PointY="7.09568359375" />
+          <ConnectorPoint PointX="6.375" PointY="7.3250000000000011" />
+          <ConnectorPoint PointX="7.5" PointY="7.3250000000000011" />
+          <ConnectorPoint PointX="7.5" PointY="7.625" />
+        </InheritanceConnector>
+        <AssociationConnector Association="CarWorkshop.EmployeeVehicle" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

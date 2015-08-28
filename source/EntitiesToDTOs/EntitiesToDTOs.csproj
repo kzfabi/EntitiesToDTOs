@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30424</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E9BEFB3-60E1-467B-AAF7-68DA9554DBE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>EntitiesToDTOs</AssemblyName>
+    <DeploymentDirectory>.\bin\</DeploymentDirectory>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <DocumentationFile>EntitiesToDTOs.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <IncrementalBuild>false</IncrementalBuild>
+    <DocumentationFile>EntitiesToDTOs.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>EntitiesToDTOs</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bolt.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0\Microsoft.VisualStudio.Shell.12.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="SplitButton">
+      <HintPath>..\Libraries\SplitButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="VsWebSite.Interop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\AssemblyVersionInfo.cs" />
+    <Compile Include="Domain\DTOClass.cs" />
+    <Compile Include="Domain\DTOComplex.cs" />
+    <Compile Include="Domain\EdmxDocument.cs" />
+    <Compile Include="Domain\Enums\EntitySource.cs" />
+    <Compile Include="Domain\Enums\ReleaseStatus.cs" />
+    <Compile Include="Domain\Enums\TargetType.cs" />
+    <Compile Include="Domain\Enums\ClassIdentifierUse.cs" />
+    <Compile Include="Domain\Enums\EntityAssociationEnd.cs" />
+    <Compile Include="Domain\Enums\EntityAssociationMultiplicity.cs" />
+    <Compile Include="Domain\Enums\AssociationType.cs" />
+    <Compile Include="Domain\EnumType.cs" />
+    <Compile Include="Domain\XElementExtensions.cs" />
+    <Compile Include="Helpers\RateReleaseHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain\AddInConfig.cs" />
+    <Compile Include="Domain\Advert.cs" />
+    <Compile Include="Domain\Assembler.cs" />
+    <Compile Include="Domain\CSharpType.cs" />
+    <Compile Include="Domain\Release.cs" />
+    <Compile Include="Forms\DataGridViewRowExtended.cs" />
+    <Compile Include="Forms\TreeNodeExtended.cs" />
+    <Compile Include="Generators\AssemblerGenerator.cs" />
+    <Compile Include="Generators\Parameters\GenerateAssemblersParams.cs" />
+    <Compile Include="Generators\GeneratorManager.cs" />
+    <Compile Include="Generators\Parameters\GeneratorManagerParams.cs" />
+    <Compile Include="Domain\AddInConfigNodes.cs" />
+    <Compile Include="Helpers\AdvertHelper.cs" />
+    <Compile Include="Helpers\AssemblyHelper.cs" />
+    <Compile Include="Helpers\ConfigNodes.cs" />
+    <Compile Include="Helpers\ConfigurationHelper.cs" />
+    <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Generators\DTOGenerator.cs" />
+    <Compile Include="Events\GeneratorEvents.cs" />
+    <Compile Include="Helpers\EdmxHelper.cs" />
+    <Compile Include="Helpers\EdmxNodeAttributes.cs" />
+    <Compile Include="Helpers\EdmxNodes.cs" />
+    <Compile Include="Domain\EntityAssociation.cs" />
+    <Compile Include="Helpers\EntityAssociationHelper.cs" />
+    <Compile Include="Domain\DTOEntity.cs" />
+    <Compile Include="Domain\DTOAttribute.cs" />
+    <Compile Include="Domain\SourceCodeImport.cs" />
+    <Compile Include="Domain\DTOClassProperty.cs" />
+    <Compile Include="Domain\EntityKeyProperty.cs" />
+    <Compile Include="Domain\EntityNavigation.cs" />
+    <Compile Include="Domain\EntityNavigationProperty.cs" />
+    <Compile Include="Domain\Enums\SourceFileGenerationType.cs" />
+    <Compile Include="Generators\Parameters\GenerateDTOsParams.cs" />
+    <Compile Include="Helpers\MessageHelper.cs" />
+    <Compile Include="Helpers\UpdateHelper.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <Compile Include="Helpers\VisualStudioHelper.cs" />
+    <Compile Include="UI\GenerationProgressWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GenerationProgressWindow.Designer.cs">
+      <DependentUpon>GenerationProgressWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HelpWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HelpWindow.Designer.cs">
+      <DependentUpon>HelpWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\LogManager.cs" />
+    <Compile Include="UI\MainWindow.Rating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RateReleaseWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RateReleaseWindow.Designer.cs">
+      <DependentUpon>RateReleaseWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportIssueWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportIssueWindow.Designer.cs">
+      <DependentUpon>ReportIssueWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainWindow.Adverts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\PropertyHelper.cs" />
+    <Compile Include="Helpers\TemplateClass.cs" />
+    <Compile Include="UI\UpdateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UpdateWindow.Designer.cs">
+      <DependentUpon>UpdateWindow.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="EnvDTE">
+      <Guid>{80CC9F66-E7D8-4DDD-85B6-D9E6CD0E93E2}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="EnvDTE80">
+      <Guid>{1A31287A-4D7D-413E-8E32-3B374931BD89}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.VisualStudio.CommandBars">
+      <Guid>{1CBA492E-7263-47BB-87FE-639000619B15}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bolt.ico" />
+    <Content Include="EntitiesToDTOs.AddIn" />
+    <None Include="Diagrams\DTOs.cd" />
+    <None Include="Resources\Advert_1.png" />
+    <None Include="Resources\AdLoading.png" />
+    <None Include="Resources\AdTemplate.png" />
+    <None Include="Resources\img_warning.png" />
+    <None Include="Resources\23.png" />
+    <None Include="Resources\Assembler_cs_template.txt" />
+    <None Include="Resources\License.txt" />
+    <None Include="Resources\img_help_hover.png" />
+    <None Include="Resources\img_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\GenerationProgressWindow.resx">
+      <DependentUpon>GenerationProgressWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HelpWindow.resx">
+      <DependentUpon>HelpWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RateReleaseWindow.resx">
+      <DependentUpon>RateReleaseWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportIssueWindow.resx">
+      <DependentUpon>ReportIssueWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UpdateWindow.resx">
+      <DependentUpon>UpdateWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions />
+  <Target Name="AfterBuild">
+    <PropertyGroup>
+      <DllName>$(AssemblyName).dll</DllName>
+      <PdbName>$(AssemblyName).pdb</PdbName>
+      <DocFileName>$(AssemblyName).xml</DocFileName>
+    </PropertyGroup>
+    <Delete Condition="Exists('$(DeploymentDirectory)$(DllName)')" Files="$(DeploymentDirectory)$(DllName)">
+    </Delete>
+    <Delete Condition="Exists('$(DeploymentDirectory)$(PdbName)')" Files="$(DeploymentDirectory)$(PdbName)">
+    </Delete>
+    <Delete Condition="Exists('$(DeploymentDirectory)$(DocFileName)')" Files="$(DeploymentDirectory)$(DocFileName)">
+    </Delete>
+    <Copy Condition="Exists('$(OutputPath)$(DllName)')" SourceFiles="$(OutputPath)$(DllName)" DestinationFolder="$(DeploymentDirectory)">
+      <Output TaskParameter="DestinationFiles" ItemName="FileWrites" />
+    </Copy>
+    <Copy Condition="Exists('$(OutputPath)$(PdbName)')" SourceFiles="$(OutputPath)$(PdbName)" DestinationFolder="$(DeploymentDirectory)">
+      <Output TaskParameter="DestinationFiles" ItemName="FileWrites" />
+    </Copy>
+    <Copy Condition="Exists('$(OutputPath)$(DocFileName)')" SourceFiles="$(OutputPath)$(DocFileName)" DestinationFolder="$(DeploymentDirectory)">
+      <Output TaskParameter="DestinationFiles" ItemName="FileWrites" />
+    </Copy>
+  </Target>
+</Project>
