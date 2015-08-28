@@ -1,11 +1,4 @@
-﻿/* EntitiesToDTOs. Copyright (c) 2011. Fabian Fernandez.
- * http://entitiestodtos.codeplex.com
- * Licensed by Common Development and Distribution License (CDDL).
- * http://entitiestodtos.codeplex.com/license
- * Fabian Fernandez. 
- * http://www.linkedin.com/in/fabianfernandezb/en
- * */
-using EnvDTE;
+﻿using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
